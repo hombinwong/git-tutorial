@@ -1,0 +1,580 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>进阶 6：看看我都改了什么 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="高级 1：不喜欢 merge 的分叉？用 rebase 吧.html" />
+    
+    
+    <link rel="prev" href="进阶 5：关于 add.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="什么是版本控制系统VCS.html">
+            
+                <a href="什么是版本控制系统VCS.html">
+            
+                    
+                    什么是版本控制系统（VCS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="什么是分布式版本控制系统DVCS.html">
+            
+                <a href="什么是分布式版本控制系统DVCS.html">
+            
+                    
+                    什么是分布式版本控制系统（DVCS）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="上手 1：新公司用 Git 管理代码，怎么快速上手？.html">
+            
+                <a href="上手 1：新公司用 Git 管理代码，怎么快速上手？.html">
+            
+                    
+                    上手 1：新公司用 Git 管理代码，怎么快速上手？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="上手 2：团队工作的基本工作模型.html">
+            
+                <a href="上手 2：团队工作的基本工作模型.html">
+            
+                    
+                    上手 2：团队工作的基本工作模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="进阶 1：HEAD、master 与 branch.html">
+            
+                <a href="进阶 1：HEAD、master 与 branch.html">
+            
+                    
+                    进阶 1：HEAD、master 与 branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="进阶 2：push 的本质.html">
+            
+                <a href="进阶 2：push 的本质.html">
+            
+                    
+                    进阶 2：push 的本质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="进阶 3：merge：合并 commits.html">
+            
+                <a href="进阶 3：merge：合并 commits.html">
+            
+                    
+                    进阶 3：merge：合并 commits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="进阶 4：Feature Branching：最流行的工作流.html">
+            
+                <a href="进阶 4：Feature Branching：最流行的工作流.html">
+            
+                    
+                    进阶 4：Feature Branching：最流行的工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="进阶 5：关于 add.html">
+            
+                <a href="进阶 5：关于 add.html">
+            
+                    
+                    进阶 5：关于 add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="进阶 6：看看我都改了什么.html">
+            
+                <a href="进阶 6：看看我都改了什么.html">
+            
+                    
+                    进阶 6：看看我都改了什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="高级 1：不喜欢 merge 的分叉？用 rebase 吧.html">
+            
+                <a href="高级 1：不喜欢 merge 的分叉？用 rebase 吧.html">
+            
+                    
+                    高级 1：不喜欢 merge 的分叉？用 rebase 吧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="高级 2：刚刚提交的代码，发现写错了怎么办.html">
+            
+                <a href="高级 2：刚刚提交的代码，发现写错了怎么办.html">
+            
+                    
+                    高级 2：刚刚提交的代码，发现写错了怎么办
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="高级 3：写错的不是最新的提交，而是倒数第二个？.html">
+            
+                <a href="高级 3：写错的不是最新的提交，而是倒数第二个？.html">
+            
+                    
+                    高级 3：写错的不是最新的提交，而是倒数第二个？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="高级 4：比错还错，想直接丢弃刚写的提交？.html">
+            
+                <a href="高级 4：比错还错，想直接丢弃刚写的提交？.html">
+            
+                    
+                    高级 4：比错还错，想直接丢弃刚写的提交？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="高级 5：想丢弃的也不是最新的提交？.html">
+            
+                <a href="高级 5：想丢弃的也不是最新的提交？.html">
+            
+                    
+                    高级 5：想丢弃的也不是最新的提交？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="高级 6：代码已经 push 上去了才发现写错？.html">
+            
+                <a href="高级 6：代码已经 push 上去了才发现写错？.html">
+            
+                    
+                    高级 6：代码已经 push 上去了才发现写错？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="高级 7：reset 的本质——不止可以撤销提交.html">
+            
+                <a href="高级 7：reset 的本质——不止可以撤销提交.html">
+            
+                    
+                    高级 7：reset 的本质——不止可以撤销提交
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="高级 8：checkout 的本质.html">
+            
+                <a href="高级 8：checkout 的本质.html">
+            
+                    
+                    高级 8：checkout 的本质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="高级 9：紧急情况：「立即给我打个包，现在马上！」.html">
+            
+                <a href="高级 9：紧急情况：「立即给我打个包，现在马上！」.html">
+            
+                    
+                    高级 9：紧急情况：「立即给我打个包，现在马上！」
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="高级 10：branch 删过了才想起来有用？.html">
+            
+                <a href="高级 10：branch 删过了才想起来有用？.html">
+            
+                    
+                    高级 10：branch 删过了才想起来有用？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="额外说点：.gitignore——排除不想被管理的文件和目录.html">
+            
+                <a href="额外说点：.gitignore——排除不想被管理的文件和目录.html">
+            
+                    
+                    额外说点：.gitignore——排除不想被管理的文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="总结.html">
+            
+                <a href="总结.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >进阶 6：看看我都改了什么</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8FDB;&#x9636;-6&#xFF1A;&#x770B;&#x770B;&#x6211;&#x90FD;&#x6539;&#x4E86;&#x4EC0;&#x4E48;">&#x8FDB;&#x9636; 6&#xFF1A;&#x770B;&#x770B;&#x6211;&#x90FD;&#x6539;&#x4E86;&#x4EC0;&#x4E48;</h1>
+<p>&#x4E4B;&#x524D;&#x7684;&#x7AE0;&#x8282;&#x91CC;&#xFF0C;&#x8BF4;&#x5230;&#x8FC7; <code>git log</code> &#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<pre><code>git log
+</code></pre><p><img src="https://user-gold-cdn.xitu.io/2017/11/22/15fe1ee0e2cc90e9?w=533&amp;h=449&amp;f=jpeg&amp;s=134977" alt="img"></p>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x770B;&#x5230;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x60F3;&#x770B;&#x770B;&#x6BCF;&#x6761; <code>commit</code> &#x5177;&#x4F53;&#x90FD;&#x6709;&#x90A3;&#x4E9B;&#x6539;&#x52A8;&#xFF0C;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;</p>
+<h2 id="log--p-&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x5386;&#x53F2;">log -p &#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x5386;&#x53F2;</h2>
+<p><code>-p</code> &#x662F; <code>--patch</code> &#x7684;&#x7F29;&#x5199;&#xFF0C;&#x901A;&#x8FC7; <code>-p</code> &#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5177;&#x4F53;&#x6BCF;&#x4E2A; <code>commit</code> &#x7684;&#x6539;&#x52A8;&#x7EC6;&#x8282;&#xFF1A;</p>
+<pre><code>git log -p
+</code></pre><p><img src="https://user-gold-cdn.xitu.io/2017/11/22/15fe1ee0dfd781e7?w=581&amp;h=602&amp;f=jpeg&amp;s=163883" alt="img"></p>
+<p><code>log -p</code> &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x4E00;&#x4E2A; <code>commit</code> &#x7684;&#x6BCF;&#x4E00;&#x884C;&#x6539;&#x52A8;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x9002;&#x5408;&#x7528;&#x4E8E;&#x4EE3;&#x7801; review&#x3002;</p>
+<h2 id="log---stat-&#x67E5;&#x770B;&#x7B80;&#x8981;&#x7EDF;&#x8BA1;">log --stat &#x67E5;&#x770B;&#x7B80;&#x8981;&#x7EDF;&#x8BA1;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x53EA;&#x60F3;&#x5927;&#x81F4;&#x770B;&#x4E00;&#x4E0B;&#x6539;&#x52A8;&#x5185;&#x5BB9;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x60F3;&#x6DF1;&#x5165;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x7EC6;&#x8282;&#xFF08;&#x4F8B;&#x5982;&#x4F60;&#x60F3;&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#x81EA;&#x5DF1;&#x662F;&#x5728;&#x54EA;&#x4E2A; <code>commit</code> &#x4E2D;&#x4FEE;&#x6539;&#x4E86; <code>games.txt</code> &#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x628A;&#x9009;&#x9879;&#x6362;&#x6210; <code>--stat</code>&#x3002;</p>
+<pre><code>git log --stat
+</code></pre><p>1</p>
+<p><img src="https://user-gold-cdn.xitu.io/2017/11/22/15fe1ee0e1ad48c7?w=539&amp;h=512&amp;f=jpeg&amp;s=139383" alt="img"></p>
+<h2 id="show-&#x67E5;&#x770B;&#x5177;&#x4F53;&#x7684;-commit">show &#x67E5;&#x770B;&#x5177;&#x4F53;&#x7684; commit</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x770B;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684; <code>commit</code> &#x7684;&#x6539;&#x52A8;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; <code>show</code>&#xFF1A;</p>
+<h3 id="&#x770B;&#x5F53;&#x524D;-commit">&#x770B;&#x5F53;&#x524D; commit</h3>
+<p>&#x76F4;&#x63A5;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>git show
+</code></pre><p>1</p>
+<p><img src="https://user-gold-cdn.xitu.io/2017/11/22/15fe1ee0e2b7738e?w=540&amp;h=330&amp;f=jpeg&amp;s=78967" alt="img"></p>
+<h3 id="&#x770B;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;-commit">&#x770B;&#x4EFB;&#x610F;&#x4E00;&#x4E2A; commit</h3>
+<p>&#x5728; <code>show</code> &#x540E;&#x9762;&#x52A0;&#x4E0A;&#x8FD9;&#x4E2A; <code>commit</code> &#x7684;&#x5F15;&#x7528;&#xFF08;<code>branch</code> &#x6216; <code>HEAD</code> &#x6807;&#x8BB0;&#xFF09;&#x6216;&#x5B83;&#x7684; <code>SHA-1</code> &#x7801;&#xFF1A;</p>
+<pre><code>git show 5e68b0d8
+</code></pre><p>1</p>
+<p><img src="https://user-gold-cdn.xitu.io/2017/11/22/15fe1ee0e39c0b6b?w=434&amp;h=388&amp;f=jpeg&amp;s=100518" alt="img"></p>
+<h3 id="&#x770B;&#x6307;&#x5B9A;-commit-&#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x6587;&#x4EF6;">&#x770B;&#x6307;&#x5B9A; commit &#x4E2D;&#x7684;&#x6307;&#x5B9A;&#x6587;&#x4EF6;</h3>
+<p>&#x5728; <code>commit</code> &#x7684;&#x5F15;&#x7528;&#x6216; <code>SHA-1</code> &#x540E;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x540D;&#xFF1A;</p>
+<pre><code>git show 5e68b0d8 shopping\ list.txt
+</code></pre><h2 id="&#x770B;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x5185;&#x5BB9;">&#x770B;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x5185;&#x5BB9;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x770B;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; <code>diff</code>&#x3002;</p>
+<h3 id="&#x6BD4;&#x5BF9;&#x6682;&#x5B58;&#x533A;&#x548C;&#x4E0A;&#x4E00;&#x6761;&#x63D0;&#x4EA4;">&#x6BD4;&#x5BF9;&#x6682;&#x5B58;&#x533A;&#x548C;&#x4E0A;&#x4E00;&#x6761;&#x63D0;&#x4EA4;</h3>
+<p>&#x4F7F;&#x7528; <code>git diff --staged</code> &#x53EF;&#x4EE5;&#x663E;&#x793A;&#x6682;&#x5B58;&#x533A;&#x548C;&#x4E0A;&#x4E00;&#x6761;&#x63D0;&#x4EA4;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8FD9;&#x6761;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x770B;&#x5230;&#x300C;&#x5982;&#x679C;&#x4F60;&#x7ACB;&#x5373;&#x8F93;&#x5165; <code>git commit</code>&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x63D0;&#x4EA4;&#x4EC0;&#x4E48;&#x300D;&#xFF1A;</p>
+<pre><code>git diff --staged
+</code></pre><p>1</p>
+<p><code>--staged</code> &#x6709;&#x4E00;&#x4E2A;&#x7B49;&#x4EF7;&#x7684;&#x9009;&#x9879;&#x53EB;&#x505A; <code>--cached</code>&#x3002;&#x8FD9;&#x91CC;&#x6240;&#x8C13;&#x7684;&#x300C;&#x7B49;&#x4EF7;&#x300D;&#xFF0C;&#x662F;&#x771F;&#x771F;&#x6B63;&#x6B63;&#x7684;&#x7B49;&#x4EF7;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x610F;&#x601D;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</p>
+<h3 id="&#x6BD4;&#x5BF9;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x6682;&#x5B58;&#x533A;">&#x6BD4;&#x5BF9;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x6682;&#x5B58;&#x533A;</h3>
+<p>&#x4F7F;&#x7528; <code>git diff</code> &#xFF08;&#x4E0D;&#x52A0;&#x9009;&#x9879;&#x53C2;&#x6570;&#xFF09;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x6682;&#x5B58;&#x533A;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8FD9;&#x6761;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x770B;&#x5230;&#x300C;&#x5982;&#x679C;&#x4F60;&#x73B0;&#x5728;&#x628A;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x90FD; <code>add</code>&#xFF0C;&#x4F60;&#x4F1A;&#x5411;&#x6682;&#x5B58;&#x533A;&#x4E2D;&#x589E;&#x52A0;&#x54EA;&#x4E9B;&#x5185;&#x5BB9;&#x300D;&#xFF1A;</p>
+<pre><code>git diff
+</code></pre><p>1</p>
+<h3 id="&#x6BD4;&#x5BF9;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x4E0A;&#x4E00;&#x6761;&#x63D0;&#x4EA4;">&#x6BD4;&#x5BF9;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x4E0A;&#x4E00;&#x6761;&#x63D0;&#x4EA4;</h3>
+<p>&#x4F7F;&#x7528; <code>git diff HEAD</code> &#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x4E0A;&#x4E00;&#x6761;&#x63D0;&#x4EA4;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x662F;&#x4E0A;&#x9762;&#x8FD9;&#x4E8C;&#x8005;&#x7684;&#x5185;&#x5BB9;&#x76F8;&#x52A0;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8FD9;&#x6761;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x770B;&#x5230;&#x300C;&#x5982;&#x679C;&#x4F60;&#x73B0;&#x5728;&#x628A;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x90FD; <code>add</code> &#x7136;&#x540E; <code>git commit</code>&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x63D0;&#x4EA4;&#x4EC0;&#x4E48;&#x300D;&#xFF08;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x6CA1;&#x6709;&#x88AB; Git &#x8BB0;&#x5F55;&#x5728;&#x6848;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x5373;&#x4ECE;&#x6765;&#x6CA1;&#x6709;&#x88AB; add &#x8FC7; &#x7684;&#x6587;&#x4EF6;&#xFF0C;untracked files &#x5E76;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x51FA;&#x6765;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x56E0;&#x4E3A;&#x5BF9; Git &#x6765;&#x8BF4;&#x5B83;&#x5E76;&#x4E0D;&#x5B58;&#x5728;&#x554A;&#xFF09;&#x3002;</p>
+<pre><code>git diff HEAD
+</code></pre><p>&#x5B9E;&#x8D28;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x628A; <code>HEAD</code> &#x6362;&#x6210;&#x522B;&#x7684; <code>commit</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x8FD9;&#x6761; <code>commit</code> &#x7684;&#x533A;&#x522B;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x79CD;&#x300C;&#x5982;&#x679C;&#x300D;&#x662F;&#x53EF;&#x4EE5;&#x5217;&#x4E3E;&#x5F88;&#x591A;&#x5F88;&#x591A;&#x7684;&#xFF0C;Git &#x975E;&#x5E38;&#x7075;&#x6D3B;&#xFF0C;&#x5047;&#x5982;&#x6211;&#x628A;&#x6BCF;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x6027;&#x90FD;&#x5217;&#x4E3E;&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x672C;&#x5C0F;&#x518C;&#x4F1A;&#x53D8;&#x5F97;&#x6742;&#x4E71;&#x65E0;&#x6BD4;&#x6CA1;&#x6709;&#x91CD;&#x70B9;&#xFF0C;&#x53CD;&#x800C;&#x4F1A;&#x8BA9;&#x4F60;&#x56F0;&#x60D1;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x53EA;&#x8BB2;&#x6700;&#x5E38;&#x7528;&#x548C;&#x6700;&#x901A;&#x7528;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x8FD9;&#x4E9B;&#x300C;&#x5982;&#x679C;&#x300D;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x6700;&#x597D;&#x662F;&#x81EA;&#x5DF1;&#x53BB;&#x63A2;&#x7D22;&#x3002;</p>
+<h2 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h2>
+<p>&#x8FD9;&#x4E00;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x4E00;&#x4E9B;&#x67E5;&#x770B;&#x6539;&#x52A8;&#x5185;&#x5BB9;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5927;&#x81F4;&#x6709;&#x8FD9;&#x4E48;&#x51E0;&#x7C7B;&#xFF1A;</p>
+<ol>
+<li>&#x67E5;&#x770B;&#x5386;&#x53F2;&#x4E2D;&#x7684;&#x591A;&#x4E2A; <code>commit</code>&#xFF1A;<code>log</code><ol>
+<li>&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x6539;&#x52A8;&#xFF1A; <code>git log -p</code></li>
+<li>&#x67E5;&#x770B;&#x5927;&#x81F4;&#x6539;&#x52A8;&#xFF1A;<code>git log --stat</code></li>
+</ol>
+</li>
+<li>&#x67E5;&#x770B;&#x5177;&#x4F53;&#x67D0;&#x4E2A; <code>commit</code>&#xFF1A;<code>show</code> <ol>
+<li>&#x8981;&#x770B;&#x6700;&#x65B0; <code>commit</code> &#xFF0C;&#x76F4;&#x63A5;&#x8F93;&#x5165; <code>git show</code> &#xFF1B;&#x8981;&#x770B;&#x6307;&#x5B9A; <code>commit</code> &#xFF0C;&#x8F93;&#x5165; <code>git show commit&#x7684;&#x5F15;&#x7528;&#x6216;SHA-1</code></li>
+<li>&#x5982;&#x679C;&#x8FD8;&#x8981;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#xFF0C;&#x5728; <code>git show</code> &#x7684;&#x6700;&#x540E;&#x52A0;&#x4E0A;&#x6587;&#x4EF6;&#x540D;</li>
+</ol>
+</li>
+<li>&#x67E5;&#x770B;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x5185;&#x5BB9;&#xFF1A;<code>diff</code> <ol>
+<li>&#x67E5;&#x770B;&#x6682;&#x5B58;&#x533A;&#x548C;&#x4E0A;&#x4E00;&#x6761; <code>commit</code> &#x7684;&#x533A;&#x522B;&#xFF1A;<code>git diff --staged</code>&#xFF08;&#x6216; <code>--cached</code>&#xFF09;</li>
+<li>&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x6682;&#x5B58;&#x533A;&#x7684;&#x533A;&#x522B;&#xFF1A;<code>git diff</code> &#x4E0D;&#x52A0;&#x9009;&#x9879;&#x53C2;&#x6570;</li>
+<li>&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x4E0A;&#x4E00;&#x6761; <code>commit</code> &#x7684;&#x533A;&#x522B;&#xFF1A;<code>git diff HEAD</code></li>
+</ol>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="进阶 5：关于 add.html" class="navigation navigation-prev " aria-label="Previous page: 进阶 5：关于 add">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="高级 1：不喜欢 merge 的分叉？用 rebase 吧.html" class="navigation navigation-next " aria-label="Next page: 高级 1：不喜欢 merge 的分叉？用 rebase 吧">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"进阶 6：看看我都改了什么","level":"1.11","depth":1,"next":{"title":"高级 1：不喜欢 merge 的分叉？用 rebase 吧","level":"1.12","depth":1,"path":"高级 1：不喜欢 merge 的分叉？用 rebase 吧.md","ref":"高级 1：不喜欢 merge 的分叉？用 rebase 吧.md","articles":[]},"previous":{"title":"进阶 5：关于 add","level":"1.10","depth":1,"path":"进阶 5：关于 add.md","ref":"进阶 5：关于 add.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"进阶 6：看看我都改了什么.md","mtime":"2018-12-08T13:48:05.541Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-08T14:41:17.869Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
